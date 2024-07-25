@@ -1,0 +1,123 @@
+Clone a Repository
+bash
+Copy code
+git clone <repository_url>
+Example:
+
+bash
+Copy code
+git clone https://github.com/user/repo.git
+Clones the repository from the given URL to your local machine.
+
+Commit Changes
+bash
+Copy code
+git add <file>
+git commit -m "Commit message"
+Example:
+
+bash
+Copy code
+git add .
+git commit -m "Initial commit"
+Adds all changes to the staging area and commits them with a message.
+
+Push Changes
+bash
+Copy code
+git push origin <branch>
+Example:
+
+bash
+Copy code
+git push origin main
+Pushes your committed changes to the remote repository on the specified branch.
+
+Fetch Updates
+bash
+Copy code
+git fetch
+Fetches updates from the remote repository but does not merge them into your local branch.
+
+Pull Updates
+bash
+Copy code
+git pull
+Fetches and merges updates from the remote repository into your current branch.
+
+Checkout a Branch
+bash
+Copy code
+git checkout <branch>
+Example:
+
+bash
+Copy code
+git checkout feature-branch
+Switches to the specified branch.
+
+Reset Changes
+bash
+Copy code
+git reset <file>
+git reset --hard
+Example:
+
+bash
+Copy code
+git reset README.md
+git reset --hard
+The first command unstages a file, the second command resets the entire working directory to the last commit.
+
+Delete a Branch
+bash
+Copy code
+git branch -d <branch>
+git push origin --delete <branch>
+Example:
+
+bash
+Copy code
+git branch -d feature-branch
+git push origin --delete feature-branch
+The first command deletes a local branch, and the second command deletes a remote branch.
+
+Show Process of Each Command
+Clone a Repository:
+
+Navigate to the directory where you want to clone the repository.
+Run the git clone command with the repository URL.
+Commit Changes:
+
+Make changes to your files.
+Add the changes to the staging area with git add.
+Commit the changes with a descriptive message using git commit.
+Push Changes:
+
+Ensure you are on the correct branch.
+Push your committed changes to the remote repository with git push.
+Fetch Updates:
+
+Run git fetch to see what others have committed without merging the changes into your branch.
+Pull Updates:
+
+Run git pull to fetch and merge updates from the remote repository.
+Checkout a Branch:
+
+List available branches with git branch.
+Switch to the desired branch using git checkout.
+Reset Changes:
+
+Unstage specific files with git reset <file>.
+Discard all local changes with git reset --hard.
+Delete a Branch:
+
+Delete a local branch with git branch -d.
+Delete a remote branch with git push origin --delete.
+Each of these commands helps manage different aspects of version control in a Git repository, facilitating collaboration and efficient workflow management.
+
+
+
+
+
+
